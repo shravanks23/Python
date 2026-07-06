@@ -1,2 +1,2 @@
 # Python
-Practice
+Learning Python and solving Leetcode problems
