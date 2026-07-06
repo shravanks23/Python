@@ -25,18 +25,15 @@ nums = [2,7,11,15]
 target = 9
 l=len(nums)
 i=0
-c1=[]
-c2=[]
 while i<l:
     j=i+1
     while j<l:
         if nums[i]+nums[j]==target:
-            c1=c1+[i]
-            c2=c2+[j]
+            c = [i,j]
             break
         j=j+1
     i=i+1
-print(c1+c2)
+print(c)
 
         
         
