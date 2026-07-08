@@ -37,4 +37,18 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.'''
 
 #Answer
-
+s = input('Enter Roman Number: ')
+s = s.upper()
+d = {'I':1 , 'V':5 , 'X':10 ,'L':50 ,'C':100 ,'D':500 ,'M':1000}
+i=0
+c=0
+while i<len(s):
+    if i != len(s)-1:
+        if d[s[i]] >= d[s[i+1]]:
+            c = c+d[s[i]]
+        else:
+            c = c-d[s[i]]
+    else:
+        c = c+d[s[i]]
+    i=i+1
+print(c)
