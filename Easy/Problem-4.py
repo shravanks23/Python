@@ -30,6 +30,8 @@ while i<len(min(strs, key=len)):
         j=j+1
     if n==len(strs):
         f=f+strs[0][i]
+    else:
+        break
     n=0
     i=i+1
     k=k+1
